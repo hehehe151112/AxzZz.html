@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sistem Terkunci - Prank</title>
+    <style>
+        /* CSS akan dimasukkan di sini */
+        body {
+            background-color: #000;
+            color: #FF0000;
+            font-family: 'Consolas', monospace;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            text-align: center;
+        }
+
+        .container {
+            border: 3px solid #FF0000;
+            padding: 30px;
+            box-shadow: 0 0 20px #FF0000;
+        }
+
+        h1 {
+            color: #FFD700; /* Warna kuning/emas untuk kontras */
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 1.2em;
+            margin-bottom: 15px;
+        }
+
+        #timer {
+            font-size: 2em;
+            color: #00FF00; /* Warna hijau untuk timer */
+            font-weight: bold;
+            margin-top: 20px;
+        }
+
+        .button-fake {
+            background-color: #555;
+            color: #EEE;
+            padding: 10px 20px;
+            border: none;
+            cursor: not-allowed;
+            margin-top: 30px;
+            font-size: 1.1em;
+            opacity: 0.5; /* Terlihat seperti tidak bisa diklik */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>⚠️ SEMUA FILE ANDA TERKUNCI! ⚠️</h1>
+        <p>Akses ke sistem telah diblokir. Semua data telah dienkripsi.</p>
+        <p>Anda memiliki waktu terbatas cepat bayar!!.</p>
+
+        <p><strong>Waktu Tersisa:</strong></p>
+        <div id="timer">00:00</div>
+
+        <button class="button-fake">Buka Kunci (Tidak Aktif)</button>
+        <p style="margin-top: 10px; font-size: 0.9em; color: #888;">(Bayar ke no 085691950713 untuk mendapatkan kunci)</p>
+    </div>
+
+    <script>
+        // JavaScript sederhana untuk hitungan mundur palsu
+        let seconds = 30; // Mulai dari 30 detik
+        const timerDisplay = document.getElementById('timer');
+
+        function countdown() {
+            const minutes = Math.floor(seconds / 60);
+            const remainingSeconds = seconds % 60;
+
+            timerDisplay.textContent = 
+                `${minutes.toString().padStart(2, '0')}:${remainingSeconds.toString().padStart(2, '0')}`;
+
+            if (seconds <= 0) {
+                clearInterval(interval);
+                timerDisplay.textContent = "WAKTU HABIS!";
+                // Tambahkan kode prank lain di sini, jika perlu
+            } else {
+                seconds--;
+            }
+        }
+
+        const interval = setInterval(countdown, 1000);
+    </script>
+
+</body>
+</html>
