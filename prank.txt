@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Video Kejutan!</title>
+
+    <meta http-equiv="refresh" content="5;url=https://vt.tiktok.com/ZSUdmGvbU/" /> 
+
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #000; /* Latar belakang hitam agar lebih fokus */
+            flex-direction: column;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+        iframe {
+            border-radius: 12px; /* Memberi sedikit sentuhan modern */
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+        }
+        p {
+            margin-top: 20px;
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+<body>
+
+    <p>Tonton ini baik-baik! (Mengalihkan dalam 5 detik...)</p>
+
+    <iframe 
+        src="https://www.tiktok.com/embed/v2/ZSUdmGvbU" 
+        width="325" 
+        height="570" 
+        frameborder="0" 
+        allow="autoplay; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen
+        title="Video Kejutan"
+    ></iframe>
+
+</body>
+</html>
